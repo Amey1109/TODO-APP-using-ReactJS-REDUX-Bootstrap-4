@@ -1,0 +1,11 @@
+
+
+  input[type=text] {
+    border-radius: 5px;
+    width: 49%;
+    border: 2px solid #0d6efd;
+    padding: 5.2px;
+  }
+  .text-muted {
+    color: red;
+}
