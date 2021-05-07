@@ -1,0 +1,84 @@
+import React,{useState,useContext} from "react";
+import { Link } from "react-router-dom";
+import { useForm } from "react-hook-form";
+import Header from "./Header";
+export default function Login() {
+  const { register, errors, handleSubmit } = useForm();
+  const onSubmitData = (submit) => {
+    console.log(submit);
+  };
+
+   const [name, setName] = useState('')
+
+
+  console.log(name)
+  return (
+    <div
+      style={{
+        display: "inline-block",
+        width: "32%",
+        marginLeft: "31%",
+        marginTop: "5%",
+      }}
+    >
+      <form onSubmit={handleSubmit(onSubmitData)}>
+        <div class="form-group" style={{ margin: "2%" }}>
+          <label style={{ margin: "2%" }}>Username</label>
+          <input
+            type="text"
+            name="username"
+            class="form-control"
+            style={{ width: "100%" }}
+            
+            placeholder="Enter Username"
+            ref={register({
+              required: { value: true, message: "Email Required" },
+            })}
+
+            onChange={(e)=>{
+                setName(e.target.value)
+            }}
+          />
+          {errors.username && (
+            <span class="form-text" style={{ margin: "2%", color: "red" }}>
+              {errors.username.message}
+            </span>
+          )}
+        </div>
+
+        <div class="form-group" style={{ margin: "2%" }}>
+          <label style={{ margin: "2%" }}>Password</label>
+          <input
+            style={{ margin: "2%" }}
+            type="password"
+            name="password"
+            class="form-control"
+            placeholder="Password"
+            ref={register({
+              required: { value: true, message: "Password Required" },
+            })}
+          />
+          {errors.username && (
+            <small class="form-text" style={{ margin: "2%", color: "red" }}>
+              {errors.password.message}
+            </small>
+          )}
+        </div>
+       
+          <Link to="/todoApp">
+            <button
+              style={{ margin: "2%", marginLeft: "38%" }}
+              type="submit"
+              class="btn btn-primary"
+              onClick={()=>{handleSubmit(onSubmitData)}}
+            >
+              Submit
+            </button>
+          </Link>
+        
+      </form>
+
+      
+    </div>
+  );
+}
