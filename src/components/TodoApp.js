@@ -10,13 +10,13 @@ const state = {
     todo:[]
   
 };
-
+//Root for all the Todo App
 export default function TodoApp(props) {
   const store = createStore(Reducer, state);
   return (
     <div className="container">
-
-      <Header name={props.match.params.name} />
+      {/* Getting the name from Router */}
+      <Header name={props.match.params.name} /> 
       <Provider store={store}>
         <AddTodo />
         <VisibilityFilter/>

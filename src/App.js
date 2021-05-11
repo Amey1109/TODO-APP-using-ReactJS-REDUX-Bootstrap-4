@@ -7,8 +7,10 @@ function App() {
     <div>
       <BrowserRouter>
         <Switch>
-          <Route path="/todoApp/:name" component={TodoApp} />
-          <Route path="/" component={Login} />
+          <Route exact path="/todoApp/:name" component={TodoApp} />
+
+          {/* Dummy Login */}
+          <Route exact path="/TODO-APP-using-ReactJS-REDUX-Bootstrap-4" component={Login} />
         </Switch>
       </BrowserRouter>
     </div>

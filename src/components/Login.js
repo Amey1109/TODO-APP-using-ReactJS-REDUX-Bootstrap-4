@@ -45,7 +45,10 @@ class Login extends React.Component {
             />
           </div>
 
+
+          {/* Passing the name of From Login */}
           <Link to={`/todoApp/${this.state.name}`}>
+
             <button
               style={{ margin: "2%", marginLeft: "38%" }}
               type="submit"
@@ -54,6 +57,7 @@ class Login extends React.Component {
             >
               Submit
             </button>
+            
           </Link>
         </form>
       </div>
