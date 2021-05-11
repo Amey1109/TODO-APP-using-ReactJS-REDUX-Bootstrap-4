@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/TODO-APP-using-ReactJS-REDUX-Bootstrap-4/static/js/main.80bdbdb0.chunk.js",
-    "main.js.map": "/TODO-APP-using-ReactJS-REDUX-Bootstrap-4/static/js/main.80bdbdb0.chunk.js.map",
+    "main.js": "/TODO-APP-using-ReactJS-REDUX-Bootstrap-4/static/js/main.d1916b4a.chunk.js",
+    "main.js.map": "/TODO-APP-using-ReactJS-REDUX-Bootstrap-4/static/js/main.d1916b4a.chunk.js.map",
     "runtime-main.js": "/TODO-APP-using-ReactJS-REDUX-Bootstrap-4/static/js/runtime-main.45988d12.js",
     "runtime-main.js.map": "/TODO-APP-using-ReactJS-REDUX-Bootstrap-4/static/js/runtime-main.45988d12.js.map",
     "static/js/2.ae4874f1.chunk.js": "/TODO-APP-using-ReactJS-REDUX-Bootstrap-4/static/js/2.ae4874f1.chunk.js",
@@ -12,6 +12,6 @@
   "entrypoints": [
     "static/js/runtime-main.45988d12.js",
     "static/js/2.ae4874f1.chunk.js",
-    "static/js/main.80bdbdb0.chunk.js"
+    "static/js/main.d1916b4a.chunk.js"
   ]
 }
